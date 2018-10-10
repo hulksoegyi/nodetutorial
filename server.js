@@ -27,7 +27,7 @@ app.use((req, res, next) => {
             console.log('Unable to append to server.log.');
         }
     });
-
+    next();
 });
 
 // app.use((req, res, next) => {
